@@ -1,16 +1,51 @@
-# React + Vite
+# meta-lp-1-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pixel-style React rebuild of the landing page:
+`https://www.brandscalingbootcamp.com/meta-lp-1`
 
-Currently, two official plugins are available:
+This project is a **single-page** React app (Vite + React JS) with custom CSS and embeds (ConverteAI video players + Typeform modal).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React (JavaScript)
+- Vite
+- CSS (no Tailwind / no CSS-in-JS)
+- Google Fonts (Syne / Inter / Space Grotesk)
 
-## React Compiler
+## Getting Started
+Prereqs: Node.js (recommended: 18+), npm.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open: `http://127.0.0.1:5173/`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+- `npm run dev` – start dev server (HMR)
+- `npm run build` – production build to `dist/`
+- `npm run preview` – preview the production build locally
+- `npm run lint` – ESLint
+
+## Project Structure
+- `src/App.jsx` – page layout (all sections)
+- `src/App.css` – page styling (section-by-section)
+- `src/components/ConverteAiPlayers.jsx` – ConverteAI player wrappers
+- `src/components/TypeformModal.jsx` – Typeform iframe modal
+- `src/components/Countdown.jsx` – countdown widget (EARLYBIRD timer)
+- `src/components/Icons.jsx` – inline SVG icon components
+- `src/lib/ensureScript.js` – injects external scripts once
+
+## Config / Key Values
+Update these if the client changes dates/forms/videos:
+- `src/App.jsx`
+  - `TYPEFORM_GENERAL_ID`, `TYPEFORM_VIP_ID`
+  - `EARLYBIRD_TARGET_ISO`
+- `src/components/ConverteAiPlayers.jsx`
+  - `CONVERTE_ACCOUNT_ID`
+  - player IDs passed to `<ConverteAiV4Player playerId="..." />`
+
+## Notes
+- Many images are loaded from Framer CDN (`framerusercontent.com`) to match the original design quickly.
+- Videos are embedded via ConverteAI and require network access to load player scripts.
+- Buttons/sections use anchor links like `#pricing` (no router).
