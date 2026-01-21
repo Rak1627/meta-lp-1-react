@@ -49,22 +49,22 @@ export function RockSection() {
                 <p className="rockText">You&apos;ll see it ALL premiere during this bootcamp.</p>
               </div>
 
-              <ul className="rockIconList rockIconList--left">
-                <li>
-                  <IconTarget className="rockIcon" />
-                  <span>How I find and contact high-value client</span>
-                </li>
-                <li>
-                  <IconHandshake className="rockIcon" />
-                  <span>Real sales conversations where I pitch and closed deals</span>
-                </li>
-                <li>
-                  <IconGlobe className="rockIcon" />
-                  <span>Delivering results using simple online tools</span>
-                </li>
-              </ul>
-
               <div className="rockRight">
+                <ul className="rockIconList">
+                  <li>
+                    <IconTarget className="rockIcon" />
+                    <span>How I find and contact high-value client</span>
+                  </li>
+                  <li>
+                    <IconHandshake className="rockIcon" />
+                    <span>Real sales conversations where I pitch and closed deals</span>
+                  </li>
+                  <li>
+                    <IconGlobe className="rockIcon" />
+                    <span>Delivering results using simple online tools</span>
+                  </li>
+                </ul>
+
                 <p className="rockPlus">Plus, I&apos;m going LIVE to walk you through:</p>
                 <ul className="rockIconList rockIconList--right">
                   <li>
@@ -88,4 +88,3 @@ export function RockSection() {
     </section>
   )
 }
-

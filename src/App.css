@@ -14,8 +14,9 @@
 }
 
 .container {
-  width: min(1200px, calc(100% - 40px));
+  width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
+  width: 80%;
 }
 
 .section {
@@ -98,7 +99,7 @@
 }
 
 .hero {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 .hero__inner {
@@ -106,7 +107,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 22px;
+  gap: 10px;
 }
 
 .hero__title {
@@ -114,7 +115,7 @@
     font-family: "Syne", "Syne Placeholder", sans-serif;
     font-weight: 500;
     line-height: 1.05;
-    font-size: clamp(38px, 4.2vw, 47px);
+    font-size: clamp(38px, 4.2vw, 45px);
     color: var(--text);
 }
 
@@ -332,7 +333,7 @@
   padding: 46px 44px;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  gap: 44px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -343,7 +344,7 @@
 .tradeTitle {
   margin: 0;
   font-family: Syne, Inter, system-ui, sans-serif;
-  font-size: clamp(28px, 2.8vw, 44px);
+  font-size: clamp(28px, 2.8vw, 35px);
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
@@ -404,6 +405,8 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  max-height: 590px;
+  min-height: 590px;
 }
 
 .brandScalingBg {
@@ -445,7 +448,7 @@
   padding: 46px 44px 34px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .brandScalingQuote {
@@ -454,12 +457,17 @@
   font-size: 64px;
   font-weight: 900;
   line-height: 1;
+  display: inline-block;
+      width: fit-content;
+    min-width: fit-content;
+    margin-bottom: -30px;
+
 }
 
 .brandScalingTitle {
   margin: 0;
   font-family: Syne, Inter, system-ui, sans-serif;
-  font-size: clamp(26px, 2.6vw, 42px);
+  font-size: clamp(26px, 2.6vw, 38px);
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
@@ -2531,7 +2539,6 @@
     grid-template-areas:
       "media"
       "copy"
-      "left"
       "right";
     column-gap: 0;
     row-gap: 26px;
@@ -2539,6 +2546,10 @@
 
   .rockMedia img {
     aspect-ratio: 16 / 10;
+  }
+
+  .rockRight {
+    margin-top: 0;
   }
 
   .rockCta {
