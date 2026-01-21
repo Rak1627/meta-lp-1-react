@@ -20,7 +20,7 @@
 }
 
 .section {
-  padding: 92px 0;
+  padding: 70px 0;
 }
 
 .section--tight {
@@ -411,7 +411,7 @@
 
 .brandScalingBg {
   position: relative;
-  padding: 110px 0;
+  padding: 70px 0;
   background-image: url(https://framerusercontent.com/images/ytrCi8LsIb0hTBYzIv6mL4p8.jpg?scale-down-to=1024&width=2160&height=3840);
   background-repeat: no-repeat;
   background-size: cover;
@@ -754,7 +754,7 @@
 .learnDays {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 30px;
 }
 
 .learnDay {
@@ -905,6 +905,7 @@
 
 .aboutSection {
   position: relative;
+  padding: 0;
 }
 
 .aboutSection::before {
@@ -1070,7 +1071,7 @@
 .rockMedia img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
+      max-height: 631px;
   object-fit: cover;
 }
 
@@ -1193,6 +1194,7 @@
 
 .testimonialsSection {
   position: relative;
+  padding: 0;
 }
 
 .testimonialsHeading {
@@ -1431,8 +1433,12 @@
   background: rgba(0, 0, 0, 0.35);
 }
 
+.guaranteeSection {
+  padding: 0;
+}
 .pricingSection {
   position: relative;
+  padding: 0;
 }
 
 .pricingHeader {
@@ -1944,6 +1950,7 @@
   display: block;
   object-fit: cover;
   object-position: center center;
+  max-height: 558px;
 }
 
 @media (max-width: 980px) {
@@ -1959,10 +1966,12 @@
   .whyImage {
     min-height: 360px;
   }
+  
 }
 
 .limitedSection {
   position: relative;
+  padding: 0;
 }
 
 .limitedSection::before {
@@ -2121,6 +2130,7 @@
 
 .faqSection {
   position: relative;
+  padding: 0;
 }
 
 .faqSection::before {
@@ -2473,6 +2483,9 @@
     flex-direction: column;
     justify-content: center;
   }
+  .hero__inner {
+    padding-top: 30px;
+  }
 
   .section {
     padding: 66px 0;
@@ -2553,4 +2566,79 @@
 
 .list .arrow::before {
   content: "→ ";
+}
+
+@media (max-width: 1675px) {
+  .whyCard .whyImage img {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 1355px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 991px) {
+  .rockGrid {
+    grid-template-columns: 1fr;
+        grid-template-areas:
+        "media"
+        "copy";
+        column-gap: 0;
+        row-gap: 26px;
+  }
+  .learnDay {
+    /* padding-left: 30px; */
+  }
+  .learnDay .learnNumber {
+    left: -10px;
+    top: -110px;
+  }
+  .learnInner {
+        row-gap: 0px;
+  }
+  .learnInner .learnMedia {
+    padding-top: 85px;
+  }
+  .whyCard .whyImage img {
+    max-height: 100%;
+  }
+  .hostMedia .hostImage {
+    min-height: 486px;
+    max-height: 500px;
+  } 
+  .hostLayout {
+    gap: 18px 22px;
+    display: flex;
+    flex-direction: column;
+}
+.hostLayout .hostMedia {
+  width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+  .learnDays {
+    padding-top: 35px;
+  }
+  .hero__title, .pricingHeading, .guaranteeTitle, .whyTitle {
+    font-size: 30px;
+  }
+  .tradeTitle {
+    font-size: 20px;
+  }
+  .brandScalingTitle {
+    font-size: 26px;
+  }
+  .rockTitle, .learnHeading, .testimonialsHeading, .proofTitle {
+    font-size: 28px;
+  }
+  .learnTitle, .giveawayHeading {
+    font-size: 24px;
+  }
+  .aboutSection, .guaranteeSection, .testimonialsSection, .pricingSection, .limitedSection, .faqSection {
+    padding: 0;
+  }
+  
 }
