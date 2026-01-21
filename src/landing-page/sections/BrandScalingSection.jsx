@@ -1,4 +1,4 @@
-import { Button } from '../components/Button'
+import { GetTicketButton } from '../components/GetTicketButton'
 
 export function BrandScalingSection() {
   return (
@@ -48,9 +48,7 @@ export function BrandScalingSection() {
               ))}
             </ul>
 
-            <Button href="#pricing">
-              GET YOUR TICKET
-            </Button>
+            <GetTicketButton />
           </div>
         </div>
       </div>

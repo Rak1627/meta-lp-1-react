@@ -1,4 +1,4 @@
-import { Button } from '../components/Button'
+import { GetTicketButton } from '../components/GetTicketButton'
 
 export function LearnSection({ rows }) {
   return (
@@ -38,9 +38,7 @@ export function LearnSection({ rows }) {
 
                 {day.cta ? (
                   <div className="learnCtaRow">
-                    <Button href="#pricing">
-                      GET YOUR TICKET
-                    </Button>
+                    <GetTicketButton />
                   </div>
                 ) : null}
               </div>
