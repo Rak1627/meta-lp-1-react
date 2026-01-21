@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { IconChevron } from '../../components/Icons'
+import { Button } from '../components/Button'
 
 export function FaqSection({ items }) {
   const [openFaqIndex, setOpenFaqIndex] = useState(-1)
@@ -38,12 +39,11 @@ export function FaqSection({ items }) {
           })}
         </div>
         <div className="faqCtaRow">
-          <a className="btn faqCta" href="#pricing">
+          <Button className="faqCta" href="#pricing">
             GET YOUR TICKET
-          </a>
+          </Button>
         </div>
       </div>
     </section>
   )
 }
-

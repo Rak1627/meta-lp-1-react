@@ -1,4 +1,5 @@
 import { ConverteAiV4Player } from '../../components/ConverteAiPlayers'
+import { Button } from '../components/Button'
 
 export function HeroSection({ heroPlayerId }) {
   return (
@@ -30,13 +31,12 @@ export function HeroSection({ heroPlayerId }) {
             <p className="heroBelowVideo__join">
               Join the <span className="red">LIVE 5-Day</span> Virtual Event
             </p>
-            <a className="btn btn--hero" href="#pricing">
+            <Button className="btn--hero" href="#pricing">
               GET YOUR TICKET
-            </a>
+            </Button>
           </div>
         </div>
       </div>
     </section>
   )
 }
-

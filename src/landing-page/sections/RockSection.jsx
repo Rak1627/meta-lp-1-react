@@ -6,6 +6,7 @@ import {
   IconTarget,
   IconX,
 } from '../../components/Icons'
+import { Button } from '../components/Button'
 
 export function RockSection() {
   return (
@@ -47,9 +48,17 @@ export function RockSection() {
                   And I&apos;m documenting EVERYTHING as I land my first paying client.
                 </p>
                 <p className="rockText">You&apos;ll see it ALL premiere during this bootcamp.</p>
-              </div>
-
-              <div className="rockRight">
+                <p className="rockPlus">Plus, I&apos;m going LIVE to walk you through:</p>
+                <ul className="rockIconList rockIconList--right">
+                  <li>
+                    <IconChat className="rockIcon" />
+                    <span>The exact outreach scripts that get responses</span>
+                  </li>
+                  <li>
+                    <IconSliders className="rockIcon" />
+                    <span>Setting up the actual ad campaigns for the client</span>
+                  </li>
+                </ul>
                 <ul className="rockIconList">
                   <li>
                     <IconTarget className="rockIcon" />
@@ -65,21 +74,9 @@ export function RockSection() {
                   </li>
                 </ul>
 
-                <p className="rockPlus">Plus, I&apos;m going LIVE to walk you through:</p>
-                <ul className="rockIconList rockIconList--right">
-                  <li>
-                    <IconChat className="rockIcon" />
-                    <span>The exact outreach scripts that get responses</span>
-                  </li>
-                  <li>
-                    <IconSliders className="rockIcon" />
-                    <span>Setting up the actual ad campaigns for the client</span>
-                  </li>
-                </ul>
-
-                <a className="btn rockCta" href="#pricing">
+                <Button className="rockCta" href="#pricing">
                   GET YOUR TICKET
-                </a>
+                </Button>
               </div>
             </div>
           </div>

@@ -1,6 +1,16 @@
-import { IconCheck, IconCrown, IconX } from '../../components/Icons'
+import { PricingCard } from '../components/PricingCard'
 
 export function PricingSection({ coreItems, vipItems, onOpenTypeform }) {
+  const generalItems = [
+    ...coreItems.map((text) => ({ text, kind: 'included' })),
+    ...vipItems.map((text) => ({ text, kind: 'excluded' })),
+  ]
+
+  const vipCardItems = [
+    ...coreItems.map((text) => ({ text, kind: 'included' })),
+    ...vipItems.map((text) => ({ text, kind: 'vip' })),
+  ]
+
   return (
     <section className="section pricingSection" id="pricing">
       <div className="container">
@@ -12,78 +22,27 @@ export function PricingSection({ coreItems, vipItems, onOpenTypeform }) {
         </div>
 
         <div className="pricingGrid">
-          <div className="pricingCard pricingCard--general">
-            <div className="pricingCard__inner pricing-card-general">
-              <div className="pricingTop">
-                <div className="pricingPrice">$47</div>
-                <div className="pricingName pricingName--general">
-                  <em>General Ticket</em>
-                </div>
-                <div className="pricingMeta pricingMeta--general">Increases to $67 soon</div>
-              </div>
+          <PricingCard
+            variant="general"
+            price="$47"
+            name="General Ticket"
+            meta="Increases to $67 soon"
+            items={generalItems}
+            buttonText="GET GENERAL TICKET"
+            onClick={() => onOpenTypeform('general')}
+          />
 
-              <ul className="pricingList">
-                {coreItems.map((text) => (
-                  <li key={text} className="pricingItem pricingItem--included">
-                    <IconCheck className="pricingIcon" />
-                    <span>{text}</span>
-                  </li>
-                ))}
-                {vipItems.map((text) => (
-                  <li key={text} className="pricingItem pricingItem--excluded">
-                    <IconX className="pricingIcon" />
-                    <span>{text}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                type="button"
-                className="pricingBtn pricingBtn--general"
-                onClick={() => onOpenTypeform('general')}
-              >
-                <span>GET GENERAL TICKET</span>
-              </button>
-            </div>
-          </div>
-
-          <div className="pricingCard pricingCard--vip">
-            <div className="pricingCard__inner pricing-card-vip">
-              <div className="pricingTop">
-                <div className="pricingPrice">$97</div>
-                <div className="pricingName pricingName--vip">
-                  <em>VIP Ticket</em>
-                </div>
-                <div className="pricingMeta pricingMeta--vip">Increases to $127 soon</div>
-              </div>
-
-              <ul className="pricingList">
-                {coreItems.map((text) => (
-                  <li key={text} className="pricingItem pricingItem--included">
-                    <IconCheck className="pricingIcon" />
-                    <span>{text}</span>
-                  </li>
-                ))}
-                {vipItems.map((text) => (
-                  <li key={text} className="pricingItem pricingItem--vip">
-                    <IconCrown className="pricingIcon" />
-                    <span>{text}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                type="button"
-                className="pricingBtn pricingBtn--vip"
-                onClick={() => onOpenTypeform('vip')}
-              >
-                <span>GET VIP TICKET</span>
-              </button>
-            </div>
-          </div>
+          <PricingCard
+            variant="vip"
+            price="$97"
+            name="VIP Ticket"
+            meta="Increases to $127 soon"
+            items={vipCardItems}
+            buttonText="GET VIP TICKET"
+            onClick={() => onOpenTypeform('vip')}
+          />
         </div>
       </div>
     </section>
   )
 }
-

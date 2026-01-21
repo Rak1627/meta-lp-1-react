@@ -1053,11 +1053,8 @@
   z-index: 1;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  grid-template-areas:
-    "media copy"
-    "left right";
+  grid-template-areas: "media copy";
   column-gap: 44px;
-  row-gap: 32px;
   align-items: start;
 }
 
@@ -1155,19 +1152,6 @@
   gap: 14px;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
-}
-
-.rockIconList--left {
-  grid-area: left;
-}
-
-.rockRight {
-  grid-area: right;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: flex-start;
-  margin-top: -69px;
 }
 
 .rockIcon {
@@ -2538,18 +2522,13 @@
     grid-template-columns: 1fr;
     grid-template-areas:
       "media"
-      "copy"
-      "right";
+      "copy";
     column-gap: 0;
     row-gap: 26px;
   }
 
   .rockMedia img {
     aspect-ratio: 16 / 10;
-  }
-
-  .rockRight {
-    margin-top: 0;
   }
 
   .rockCta {
