@@ -31,7 +31,7 @@ export function HeroSection({ heroPlayerId }) {
             <p className="heroBelowVideo__join">
               Join the <span className="red">LIVE 5-Day</span> Virtual Event
             </p>
-            <Button className="btn--hero" href="#pricing">
+            <Button href="#pricing">
               GET YOUR TICKET
             </Button>
           </div>

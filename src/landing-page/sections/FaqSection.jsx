@@ -39,7 +39,7 @@ export function FaqSection({ items }) {
           })}
         </div>
         <div className="faqCtaRow">
-          <Button className="faqCta" href="#pricing">
+          <Button href="#pricing">
             GET YOUR TICKET
           </Button>
         </div>

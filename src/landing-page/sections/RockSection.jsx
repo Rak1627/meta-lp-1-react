@@ -74,7 +74,7 @@ export function RockSection() {
                   </li>
                 </ul>
 
-                <Button className="rockCta" href="#pricing">
+                <Button href="#pricing">
                   GET YOUR TICKET
                 </Button>
               </div>

@@ -48,7 +48,7 @@ export function BrandScalingSection() {
               ))}
             </ul>
 
-            <Button className="brandScalingCta" href="#pricing">
+            <Button href="#pricing">
               GET YOUR TICKET
             </Button>
           </div>

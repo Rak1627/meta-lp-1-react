@@ -38,7 +38,7 @@ export function LearnSection({ rows, onOpenTypeform }) {
 
                 {day.cta ? (
                   <div className="learnCtaRow">
-                    <Button className="learnCta" onClick={() => onOpenTypeform('general')}>
+                    <Button onClick={() => onOpenTypeform('general')}>
                       GET YOUR TICKET
                     </Button>
                   </div>
