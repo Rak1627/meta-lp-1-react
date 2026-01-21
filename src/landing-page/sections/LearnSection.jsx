@@ -1,6 +1,6 @@
 import { Button } from '../components/Button'
 
-export function LearnSection({ rows, onOpenTypeform }) {
+export function LearnSection({ rows }) {
   return (
     <section className="section learnSection">
       <div className="container">
@@ -38,7 +38,7 @@ export function LearnSection({ rows, onOpenTypeform }) {
 
                 {day.cta ? (
                   <div className="learnCtaRow">
-                    <Button onClick={() => onOpenTypeform('general')}>
+                    <Button href="#pricing">
                       GET YOUR TICKET
                     </Button>
                   </div>

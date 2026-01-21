@@ -42,7 +42,7 @@ export function LandingPage({ onOpenTypeform }) {
         <BrandScalingSection />
         <RockSection />
         <AboutSection />
-        <LearnSection rows={learnRows} onOpenTypeform={openTypeform} />
+        <LearnSection rows={learnRows} />
         <TestimonialsSection rows={testimonialRows} />
         <ProofSection videos={proofVideos} />
         <PricingSection
@@ -61,4 +61,3 @@ export function LandingPage({ onOpenTypeform }) {
     </>
   )
 }
-
