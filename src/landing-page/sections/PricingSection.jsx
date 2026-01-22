@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { PricingCard } from '../components/PricingCard'
 
 export function PricingSection({ coreItems, vipItems, onOpenTypeform }) {
@@ -45,4 +46,10 @@ export function PricingSection({ coreItems, vipItems, onOpenTypeform }) {
       </div>
     </section>
   )
+}
+
+PricingSection.propTypes = {
+  coreItems: PropTypes.arrayOf(PropTypes.string).isRequired,
+  vipItems: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onOpenTypeform: PropTypes.func.isRequired,
 }

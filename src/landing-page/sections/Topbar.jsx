@@ -1,10 +1,18 @@
+import PropTypes from 'prop-types'
+import { Image } from '../../components/Image'
 import { Countdown } from '../../components/Countdown'
 
 export function Topbar({ logoUrl, earlybirdTargetIso }) {
   return (
     <header className="lp__topbar">
       <div className="container topbarInner">
-        <img className="lp__logo" src={logoUrl} alt="The Brand Scaling Bootcamp" />
+        <Image
+          className="lp__logo"
+          src={logoUrl}
+          alt="The Brand Scaling Bootcamp"
+          priority
+          sizes="(max-width: 768px) 200px, 300px"
+        />
         <div className="topbarCountdown" aria-label="Earlybird countdown">
           <div className="topbarCountdown__label">EARLYBIRD ACCESS:</div>
           <Countdown targetIso={earlybirdTargetIso} />
@@ -12,5 +20,10 @@ export function Topbar({ logoUrl, earlybirdTargetIso }) {
       </div>
     </header>
   )
+}
+
+Topbar.propTypes = {
+  logoUrl: PropTypes.string.isRequired,
+  earlybirdTargetIso: PropTypes.string.isRequired,
 }
 

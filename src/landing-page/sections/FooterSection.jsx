@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types'
+import { Image } from '../../components/Image'
+
 export function FooterSection({ logoUrl }) {
   return (
     <footer className="footer">
@@ -64,11 +67,11 @@ export function FooterSection({ logoUrl }) {
             </p>
             <p className="muted-2">Last Updated: December 23rd, 2025</p>
             <div className="stack" style={{ alignItems: 'center', marginTop: 18, gap: 8 }}>
-              <img
+              <Image
                 className="footerLogo"
                 src={logoUrl}
                 alt="The Brand Scaling Bootcamp"
-                loading="lazy"
+                sizes="200px"
               />
               <a href="#" target="_blank" rel="noreferrer">
                 Terms of Services
@@ -83,5 +86,9 @@ export function FooterSection({ logoUrl }) {
       </div>
     </footer>
   )
+}
+
+FooterSection.propTypes = {
+  logoUrl: PropTypes.string.isRequired,
 }
 

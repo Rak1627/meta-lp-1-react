@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { ensureScript } from '../lib/ensureScript'
 
 const CONVERTE_ACCOUNT_ID = '501b61c5-4d51-4add-a51a-9e0cdc162cb7'
@@ -31,5 +32,13 @@ export function ConverteAiLegacyPlayer({ playerId }) {
       <div id={`backdrop_${playerId}`} className="videoLegacy__backdrop" />
     </div>
   )
+}
+
+ConverteAiV4Player.propTypes = {
+  playerId: PropTypes.string.isRequired,
+}
+
+ConverteAiLegacyPlayer.propTypes = {
+  playerId: PropTypes.string.isRequired,
 }
 

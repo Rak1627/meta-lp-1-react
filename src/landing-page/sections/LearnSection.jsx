@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+import { Image } from '../../components/Image'
 import { GetTicketButton } from '../components/GetTicketButton'
 
 export function LearnSection({ rows }) {
@@ -33,7 +35,11 @@ export function LearnSection({ rows }) {
                 </div>
 
                 <div className="learnMedia">
-                  <img src={day.image} alt="" loading="lazy" />
+                  <Image
+                    src={day.image}
+                    alt={`Day ${day.number} preview`}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
 
                 {day.cta ? (
@@ -48,4 +54,20 @@ export function LearnSection({ rows }) {
       </div>
     </section>
   )
+}
+
+LearnSection.propTypes = {
+  rows: PropTypes.arrayOf(
+    PropTypes.shape({
+      number: PropTypes.string.isRequired,
+      titleLines: PropTypes.arrayOf(PropTypes.string).isRequired,
+      image: PropTypes.string.isRequired,
+      reverse: PropTypes.bool,
+      cta: PropTypes.bool,
+      card: PropTypes.shape({
+        desc: PropTypes.string.isRequired,
+        bullets: PropTypes.arrayOf(PropTypes.string).isRequired,
+      }).isRequired,
+    })
+  ).isRequired,
 }

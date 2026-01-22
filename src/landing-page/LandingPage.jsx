@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { EARLYBIRD_TARGET_ISO, LOGO_URL } from './config'
 import {
   HERO_VIDEO_PLAYER_ID,
@@ -60,4 +61,8 @@ export function LandingPage({ onOpenTypeform }) {
       </main>
     </>
   )
+}
+
+LandingPage.propTypes = {
+  onOpenTypeform: PropTypes.func.isRequired,
 }

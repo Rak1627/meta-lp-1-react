@@ -1,3 +1,5 @@
+import { Image } from '../../components/Image'
+
 export function TradeSection() {
   return (
     <section className="section">
@@ -50,10 +52,10 @@ export function TradeSection() {
             </div>
 
             <div className="tradeMedia" aria-hidden="true">
-              <img
-                src="https://framerusercontent.com/images/i6Y09WtVFql2So50DSctHa5Q3Lc.webp?width=1290&height=1601"
-                alt=""
-                loading="lazy"
+              <Image
+                src="trade-phone"
+                alt="Phone with trading app"
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>

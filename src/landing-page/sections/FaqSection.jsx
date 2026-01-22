@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import { IconChevron } from '../../components/Icons'
 import { GetTicketButton } from '../components/GetTicketButton'
 
@@ -44,4 +45,13 @@ export function FaqSection({ items }) {
       </div>
     </section>
   )
+}
+
+FaqSection.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      q: PropTypes.string.isRequired,
+      a: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 }

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { ConverteAiV4Player } from '../../components/ConverteAiPlayers'
 import { GetTicketButton } from '../components/GetTicketButton'
 
@@ -10,9 +11,7 @@ export function HeroSection({ heroPlayerId }) {
           <h1 className="hero__title">
             This <span className="red">5 Day Bootcamp</span> Teaches You The{' '}
             <span className="yellow">Beginner-Friendly Skill</span>
-            <br />
             That Normal People Are Using To
-            <br />
             <span className="yellow">Escape The Traditional Career Path</span>
           </h1>
           <p className="hero__subtitle">
@@ -37,4 +36,8 @@ export function HeroSection({ heroPlayerId }) {
       </div>
     </section>
   )
+}
+
+HeroSection.propTypes = {
+  heroPlayerId: PropTypes.string.isRequired,
 }

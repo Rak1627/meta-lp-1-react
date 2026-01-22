@@ -1,3 +1,5 @@
+import { Image } from '../../components/Image'
+
 export function GiveawaySection() {
   return (
     <section className="section section--tight giveawaySection">
@@ -17,10 +19,10 @@ export function GiveawaySection() {
         <div className="giveawayGrid">
           <div className="giveawayCard">
             <div className="giveawayCard__image">
-              <img
-                src="https://framerusercontent.com/images/tvQN3TN3ABpBLKsf996xgkGR5NY.jpg?width=3840&height=2160"
-                alt=""
-                loading="lazy"
+              <Image
+                src="giveaway-miami"
+                alt="Three brand new MacBooks"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
             <h3 className="giveawayCard__title">THREE BRAND NEW MACBOOKS</h3>
@@ -28,10 +30,10 @@ export function GiveawaySection() {
 
           <div className="giveawayCard">
             <div className="giveawayCard__image">
-              <img
-                src="https://framerusercontent.com/images/mB62E1pQ72OwQYbTTDP2NdxPSyo.png?width=1000&height=1000"
-                alt=""
-                loading="lazy"
+              <Image
+                src="giveaway-setup"
+                alt="Brand new Rolex"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
             <h3 className="giveawayCard__title">
@@ -43,10 +45,10 @@ export function GiveawaySection() {
 
           <div className="giveawayCard">
             <div className="giveawayCard__image">
-              <img
-                src="https://framerusercontent.com/images/3kdF6DQdkscylWUeTePdybl4.webp?width=1537&height=2318"
-                alt=""
-                loading="lazy"
+              <Image
+                src="giveaway-person"
+                alt="Private dinner with Brez in Miami"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
             <div className="giveawayCard__foot">

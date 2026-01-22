@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { IconCheck, IconCrown, IconX } from '../../components/Icons'
 
 const ICON_BY_KIND = {
@@ -40,4 +41,19 @@ export function PricingCard({ variant, price, name, meta, items, buttonText, onC
       </div>
     </div>
   )
+}
+
+PricingCard.propTypes = {
+  variant: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  meta: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      kind: PropTypes.oneOf(['included', 'excluded', 'vip']).isRequired,
+    })
+  ).isRequired,
+  buttonText: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 }

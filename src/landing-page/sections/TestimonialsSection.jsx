@@ -1,24 +1,41 @@
+import { useMemo } from 'react'
+import PropTypes from 'prop-types'
+import { Image } from '../../components/Image'
+
 function TestimonialsMarquee({ images, reverse = false, duration, delay }) {
+  const style = useMemo(() => {
+    const baseStyle = { '--duration': duration }
+    if (delay) {
+      baseStyle['--delay'] = delay
+    }
+    return baseStyle
+  }, [duration, delay])
+
   return (
     <div className="testimonialsMarquee">
       <ul
         className={`testimonialsTrack${reverse ? ' testimonialsTrack--reverse' : ''}`}
-        style={{
-          '--duration': duration,
-          ...(delay ? { '--delay': delay } : null),
-        }}
+        style={style}
       >
         <li className="testimonialsGroup">
           {images.map((src) => (
             <div className="testimonialsTile" key={src}>
-              <img src={src} alt="" loading="lazy" />
+              <Image
+                src={src}
+                alt="Customer testimonial"
+                sizes="(max-width: 500px) 100vw, 500px"
+              />
             </div>
           ))}
         </li>
         <li className="testimonialsGroup" aria-hidden="true">
           {images.map((src) => (
             <div className="testimonialsTile" key={`${src}-dup`}>
-              <img src={src} alt="" loading="lazy" />
+              <Image
+                src={src}
+                alt="Customer testimonial"
+                sizes="(max-width: 500px) 100vw, 500px"
+              />
             </div>
           ))}
         </li>
@@ -40,5 +57,16 @@ export function TestimonialsSection({ rows }) {
       </div>
     </section>
   )
+}
+
+TestimonialsMarquee.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  reverse: PropTypes.bool,
+  duration: PropTypes.string.isRequired,
+  delay: PropTypes.string,
+}
+
+TestimonialsSection.propTypes = {
+  rows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 }
 

@@ -6,6 +6,7 @@ import {
   IconTarget,
   IconX,
 } from '../../components/Icons'
+import { Image } from '../../components/Image'
 import { GetTicketButton } from '../components/GetTicketButton'
 
 export function RockSection() {
@@ -16,10 +17,10 @@ export function RockSection() {
           <div className="rockInner">
             <div className="rockGrid">
               <div className="rockMedia" aria-hidden="true">
-                <img
-                  src="https://framerusercontent.com/images/aABHUG2bZoOMET3niXkrwf22Tig.webp?width=1537&height=2318"
-                  alt=""
-                  loading="lazy"
+                <Image
+                  src="rock-person"
+                  alt="Starting from rock bottom"
+                  sizes="(max-width: 768px) 100vw, 40vw"
                 />
               </div>
 

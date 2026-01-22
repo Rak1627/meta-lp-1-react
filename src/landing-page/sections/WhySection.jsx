@@ -1,3 +1,5 @@
+import { Image } from '../../components/Image'
+
 export function WhySection() {
   return (
     <section className="section section--tight whySection">
@@ -40,10 +42,10 @@ export function WhySection() {
 
             <div className="whyMedia">
               <div className="whyImage">
-                <img
-                  src="https://framerusercontent.com/images/obV4RjfiZ6cCF2N1uSJ9E6H6zM.jpg?width=1535&height=2316"
-                  alt=""
-                  loading="lazy"
+                <Image
+                  src="why-person"
+                  alt="Why this price"
+                  sizes="(max-width: 768px) 100vw, 40vw"
                 />
               </div>
             </div>

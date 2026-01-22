@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { IconX } from './Icons'
 
 function useBodyScrollLock(locked) {
@@ -57,5 +58,12 @@ export function TypeformModal({ open, title, formId, onClose }) {
       </div>
     </div>
   )
+}
+
+TypeformModal.propTypes = {
+  open: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
+  formId: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 }
 

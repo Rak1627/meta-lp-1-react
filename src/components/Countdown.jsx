@@ -1,12 +1,21 @@
 import { useEffect, useMemo, useState } from 'react'
+import PropTypes from 'prop-types'
 
 export function Countdown({ targetIso }) {
   const targetMs = useMemo(() => new Date(targetIso).getTime(), [targetIso])
   const [nowMs, setNowMs] = useState(() => Date.now())
 
   useEffect(() => {
-    const id = window.setInterval(() => setNowMs(Date.now()), 1000)
-    return () => window.clearInterval(id)
+    let mounted = true
+    const id = window.setInterval(() => {
+      if (mounted) {
+        setNowMs(Date.now())
+      }
+    }, 1000)
+    return () => {
+      mounted = false
+      window.clearInterval(id)
+    }
   }, [])
 
   const diff = Math.max(0, targetMs - nowMs)
@@ -30,5 +39,9 @@ export function Countdown({ targetIso }) {
       <span className="countdown__label">S</span>
     </div>
   )
+}
+
+Countdown.propTypes = {
+  targetIso: PropTypes.string.isRequired,
 }
 

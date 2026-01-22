@@ -1,3 +1,5 @@
+import { Image } from '../../components/Image'
+
 export function HostSection() {
   return (
     <section className="section hostSection">
@@ -8,11 +10,11 @@ export function HostSection() {
               <h2 className="hostHeading">Meet Your Host</h2>
 
               <div className="hostMedia">
-                <img
+                <Image
                   className="hostImage"
-                  src="https://framerusercontent.com/images/6uYfMbLfBOn0Yb3E8Okqd42k6I.webp?width=3024&height=4032"
-                  alt="Brez"
-                  loading="lazy"
+                  src="host"
+                  alt="Brez, your host"
+                  sizes="(max-width: 768px) 100vw, 400px"
                 />
               </div>
 

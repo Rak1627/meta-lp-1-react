@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { ConverteAiV4Player } from '../../components/ConverteAiPlayers'
 
 export function ProofSection({ videos }) {
@@ -40,5 +41,14 @@ export function ProofSection({ videos }) {
       </div>
     </section>
   )
+}
+
+ProofSection.propTypes = {
+  videos: PropTypes.arrayOf(
+    PropTypes.shape({
+      playerId: PropTypes.string.isRequired,
+      caption: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 }
 
