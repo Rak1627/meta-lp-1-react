@@ -7,16 +7,13 @@ export function HeroSection({ heroPlayerId }) {
     <section className="hero">
       <div className="container">
         <div className="hero__inner">
-          <div className="pill pill--date">7 PM EST @ FEB 2 ND - FEB 6TH</div>
+          <div className="pill pill--gradient">Stop Wasting Money on Agencies</div>
           <h1 className="hero__title">
-            This <span className="red">5 Day Bootcamp</span> Teaches You The{' '}
-            <span className="yellow">Beginner-Friendly Skill</span>
-            That Normal People Are Using To
-            <span className="yellow">Escape The Traditional Career Path</span>
+            Turn Meta Ads/Marketing Into a Simple System That Brings You Buyers Every Day
           </h1>
           <p className="hero__subtitle">
-            Follow Along LIVE ON ZOOM. Without showing your face online, gambling in the stock
-            market, or spending thousands on inventory
+            Get the free Meta Ads Cheat Sheet and short video that
+            show you how to plug your ads into GHL so you book more calls and make more sales without hiring anyone.
           </p>
 
           <div className="videoShell">

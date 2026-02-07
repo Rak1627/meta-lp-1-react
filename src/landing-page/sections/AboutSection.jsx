@@ -4,7 +4,8 @@ export function AboutSection() {
   return (
     <section className="section aboutSection">
       <div className="container">
-        <h2 className="aboutHeading">About The Bootcamp</h2>
+        <h2 className="aboutHeading">About the Training & Cheat
+Sheet</h2>
 
         <div className="aboutGrid">
           <div className="aboutCard">
@@ -13,8 +14,13 @@ export function AboutSection() {
               <div className="aboutCard__label">WHAT</div>
             </div>
             <p className="aboutCard__text">
-              A live 5-Day Brand Scaling Bootcamp where you&apos;ll follow along with me going from
-              zero &rarr; first client payment in real time... and copy the exact system step-by-step.
+              A free on‑demand training + Meta Ads
+Psychology Cheat Sheet that shows you how to
+turn cold traffic into booked calls using a simple
+Meta + GHL system.
+
+Watch the short VSL, follow the steps, and keep
+the cheat sheet open as you build.
             </p>
           </div>
 
@@ -24,8 +30,9 @@ export function AboutSection() {
               <div className="aboutCard__label">WHERE</div>
             </div>
             <p className="aboutCard__text">
-              100% online. You&apos;ll get instant access to the private event hub + live room links
-              + community after you grab your ticket.
+              100% online. You’ll get instant access to the video
+and a downloadable PDF you can reuse every
+time you launch or fix a campaign.
             </p>
           </div>
 
@@ -35,14 +42,11 @@ export function AboutSection() {
               <div className="aboutCard__label">WHEN</div>
             </div>
             <p className="aboutCard__text">
-              Runs for 5 days in a row. Each session is 60&ndash;90 minutes (plus optional Q&amp;A /
-              VIP breakouts).
-            </p>
-            <p className="aboutCard__meta">
-              <strong>Dates:</strong> February 2nd - 6th
-            </p>
-            <p className="aboutCard__meta">
-              <strong>Time:</strong> Everyday Starting @7PM EST
+              Right now.
+
+Enter your email, hit play, and start installing the
+system in the next 30 minutes—no live webinar,
+no wait, no timezone drama.
             </p>
           </div>
         </div>

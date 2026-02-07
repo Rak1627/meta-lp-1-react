@@ -2,58 +2,54 @@ import { Image } from '../../components/Image'
 
 export function TradeSection() {
   return (
-    <section className="section">
+    <section className="section tradeSection">
       <div className="container">
         <div className="tradeOuter">
           <div className="tradeInner">
             <div className="tradeCopy">
               <h2 className="tradeTitle">
-                How Long Are You Going to Keep Trading Your Time for a Paycheck That Barely Covers
-                the Bills?
+                How Long Are You Going to Let Broken Marketing Decide Your Income?
               </h2>
               <p className="tradeSubtitle">Be honest with yourself for a second.</p>
 
               <ul className="tradeList">
                 <li>
-                  <strong className="tradeHl tradeHl--red">The alarm clock</strong> that goes off
-                  before you&apos;re ready, every single day
+                  <strong className="tradeHl tradeHl--red">The “lucky”</strong> month where your ads somehow work…
+                   followed by two months of crickets.
+                </li>
+                
+                <li>
+                  <strong className="tradeHl tradeHl--red">The agency</strong> that sends screenshots and buzzwords but
+                    not buyers in your Stripe.
+                   
                 </li>
                 <li>
-                  <strong className="tradeHl tradeHl--red">The commute</strong> that eats 2 hours of
-                  your life while you sit in traffic
+                  <strong className="tradeHl tradeHl--red">The campaigns</strong> that get clicks, likes, and comments—but
+                    almost no booked calls.
+                </li>
+                
+                <li>
+                  <strong className="tradeHl tradeHl--yellow">The feeling</strong> that you’re smart enough to fix this, but you
+                    don’t know what to change.  
                 </li>
                 <li>
-                  <strong className="tradeHl tradeHl--red">The boss</strong> who doesn&apos;t respect
-                  your time, your ideas, or your worth
-                </li>
-                <li>
-                  <strong className="tradeHl tradeHl--yellow">The paycheck</strong> that&apos;s gone
-                  before the month is over
-                </li>
-                <li>
-                  <strong className="tradeHl tradeHl--yellow">The requests</strong> from people you
-                  love that you can&apos;t afford to say yes to
-                </li>
-                <li>
-                  <strong className="tradeHl tradeHl--yellow">The &quot;someday&quot;</strong>{' '}
-                  that never comes&hellip; &quot;someday I&apos;ll travel, someday I&apos;ll buy that
-                  car, someday I&apos;ll be free&quot;
-                </li>
-                <li>
-                  <strong className="tradeHl tradeHl--yellow">The feeling</strong> that you&apos;re
-                  capable of MORE but stuck in a system that wasn&apos;t designed for you to win
+                  <strong className="tradeHl tradeHl--yellow">The quiet</strong> panic every time you check Ads Manager and
+see money going out, not coming back.
+
+                   
                 </li>
               </ul>
 
               <p className="tradeBottom tradeBottom--strong">
-                You&apos;re not crazy for wanting something different.
+                You’re not crazy for wanting predictable clients and cashflow.
               </p>
-              <p className="tradeBottom">You&apos;re just looking in the wrong places.</p>
+              <p className="tradeBottom">You’ve just never been shown a simple system that makes
+Meta ads work for you, not against you.</p>
             </div>
 
             <div className="tradeMedia" aria-hidden="true">
               <Image
-                src="trade-phone"
+                src="image-562"
                 alt="Phone with trading app"
                 sizes="(max-width: 768px) 100vw, 40vw"
               />

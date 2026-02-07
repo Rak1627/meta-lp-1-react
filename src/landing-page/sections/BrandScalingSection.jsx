@@ -11,42 +11,40 @@ export function BrandScalingSection() {
             </div>
 
             <h2 className="brandScalingTitle">
-              What <span className="brandScalingTitle__yellow">Freelance Brand Scaling</span>
-              <br />
-              Really Is:
+             <span className="brandScalingTitle__yellow"> Only 3%</span> of your market wakes up ready to buy
             </h2>
+             
 
             <p className="brandScalingText">
-              Instead of trying to start a whole complicated business...
+              Only 3% of your market wakes up ready to buy
+
+if you don’t have a system for the other 97%, you’re lighting
+your advertising budget on fire
+
+
             </p>
             <p className="brandScalingText">
-              You just need to learn a high-value, scalable skill that businesses are desperate to
-              pay for.
+              Because here’s what actually happens:
             </p>
             <p className="brandScalingText">
-              And right now in 2026, businesses want{' '}
-              <span className="brandScalingText__red">ONE</span> thing more than anything else:
+              • The 3% who are ready to buy now will click, compare you
+to 3 other tabs, and choose whoever feels the most
+dialed‑in.
             </p>
+            <p className="brandScalingText">
+              • The next 40% are interested but distracted—they need
+follow‑up, reminders, and proof before they move.
+
+
+            </p>
+            <p className="brandScalingText"> • The remaining 57% don’t even know they have a problem
+yet—until your content and ads make it painfully obvious.</p>
             <p className="brandScalingHighlight">
-              <em>Online advertising</em>
+              Your Meta ads shouldn’t just “get traffic.”
             </p>
-            <p className="brandScalingText">Every business will ALWAYS need more customers.</p>
-            <p className="brandScalingText">
-              If you can get them more customers by running ads for them...
-            </p>
-            <p className="brandScalingText">Then you have a skillset that:</p>
-
-            <ul className="brandScalingList">
-              {[
-                'Is ALWAYS in demand',
-                'Has VERY high profit margins',
-                'Is NOT tied to how many hours you work',
-                'Allows you to work from ANYWHERE in the world',
-                'Becomes MORE valuable as AI gets better',
-              ].map((text) => (
-                <li key={text}>{text}</li>
-              ))}
-            </ul>
+            <p className="brandScalingText">They should push all three groups into one simple GHL
+system that captures them, follows up with them, and turns
+them into booked calls while you work—or sleep.</p>
 
             <GetTicketButton />
           </div>

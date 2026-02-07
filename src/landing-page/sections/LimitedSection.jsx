@@ -1,15 +1,15 @@
 const limitedCards = [
   {
     icon: '⚠️',
-    text: 'Enrollment closes February 1st at midnight (or when we hit the maximum amount of participants — whichever comes first)',
+    text: 'If you’re still stuck in feast‑or‑famine six months from now, it won’t be because this didn’t exist— it’ll be because you scrolled past it.',
   },
   {
     icon: '💰',
-    text: 'Price increases to $67 in the next days (VIP goes to $127)',
+    text: 'The 1:1 Meta Ads & Funnel Audit stays at 197 for now—but once the calendar is full, the price goes up.',
   },
   {
     icon: '🎁',
-    text: 'Giveaway entries only valid for people who register before January 31st',
+    text: 'Giveaway entries for the GHL year, live intensive, and traffic booster are only valid for people who grab the training during this round.',
   },
 ]
 
@@ -18,15 +18,17 @@ export function LimitedSection() {
     <section className="section section--tight limitedSection">
       <div className="container">
         <div className="limitedHeading">
-          <h2 className="limitedTitle">This Won&apos;t Be Available For Long</h2>
+          <h2 className="limitedTitle">This Won’t Be Free Forever</h2>
           <div className="limitedLead">
-            <p className="limitedLeadMuted">Here&apos;s what&apos;s happening:</p>
-            <p className="limitedLeadHighlight">
+            <p className="limitedLeadMuted">Access to the free training may close once we hit
+our max number of users I can realistically
+support.</p>
+            {/* <p className="limitedLeadHighlight">
               <strong>📅 Bootcamp runs February 2-6, 2025</strong>
             </p>
             <p className="limitedLeadHighlight">
               <strong>7PM EST daily | 60-90 minutes per session</strong>
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -43,15 +45,14 @@ export function LimitedSection() {
 
         <div className="limitedFooter">
           <p>
-            I cap enrollment because this is a LIVE event. If there are 10,000 people in the chat,
-            I can&apos;t answer questions. I can&apos;t give personal feedback. It becomes a lecture
-            instead of a bootcamp.
+            Last time I opened this up, over 300,000 people hit the funnel in a month and my calendar was slammed with multiple audits a day.
           </p>
-          <p>Right now, there are only a couple hundred spots remaining.</p>
+          <p>I refuse to turn this into another factory where we
+rush through calls and skim over your numbers.</p>
           <p>
-            When they&apos;re gone, they&apos;re gone. You&apos;re either in or you&apos;re watching from the
-            sidelines while others build their online businesses..
+            So now we run this in controlled waves. We turn the funnel on, let a limited batch in, do the work properly… then turn it off again until we’re ready for the next round.
           </p>
+          <p>If you’re seeing this, it means the doors are open —for now.</p>
         </div>
       </div>
     </section>

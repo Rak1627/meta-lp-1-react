@@ -9,9 +9,9 @@ export function ProofSection({ videos }) {
           <div className="proofInner">
             <div className="proofHeader">
               <h2 className="proofTitle">
-                Grab Your Ticket To Follow Along
-                <br />
-                And See EXACTLY How It&apos;s Done
+                These aren’t “unicorn” clients. They’re freelancers
+and operators who plugged a simple Meta + GHL
+system into their offers.
               </h2>
               <p className="proofKicker">
                 <em>
@@ -19,8 +19,9 @@ export function ProofSection({ videos }) {
                 </em>
               </p>
               <p className="proofDesc">
-                I&rsquo;ll be sharing wins, screenshots, and real student results throughout the 5
-                days so you can see what&rsquo;s possible when you follow the system.
+                In the video, I walk through real dashboards,
+campaigns, and pipelines so you can see how
+we turn attention into predictable income 
               </p>
             </div>
 

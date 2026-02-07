@@ -6,7 +6,7 @@ export function LearnSection({ rows }) {
   return (
     <section className="section learnSection">
       <div className="container">
-        <h2 className="learnHeading">What You&apos;ll Learn in 5 Days</h2>
+        <h2 className="learnHeading">What You’ll Learn in the Training</h2>
 
         <div className="learnDays">
           {rows.map((day) => (

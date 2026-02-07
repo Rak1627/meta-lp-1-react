@@ -18,7 +18,7 @@ export function RockSection() {
             <div className="rockGrid">
               <div className="rockMedia" aria-hidden="true">
                 <Image
-                  src="rock-person"
+                  src="overlay-border"
                   alt="Starting from rock bottom"
                   sizes="(max-width: 768px) 100vw, 40vw"
                 />
@@ -26,17 +26,26 @@ export function RockSection() {
 
               <div className="rockCopy">
                 <h2 className="rockTitle">
-                  Follow Along As I Start
+                  Follow Along as I Build
                   <br />
-                  Over <span className="rockTitle__yellow">From Rock Bottom</span>
+                  a Profit<span className="rockTitle__yellow"> Machine From Scratch</span>
                 </h2>
+                 
 
-                <p className="rockKicker">I&apos;m starting from ZERO:</p>
+
+                <p className="rockKicker">I’m building this Meta ads
+system the same way you’d
+have to</p>
+<p className='rockKicker'>no secret list, no “guru”
+shortcuts.</p>
+
+<p className='rockKicker'>I’m starting from:</p>
+
                 <ul className="rockZeroList">
                   {[
-                    'No existing clients or connections',
-                    'No results to lean on',
-                    'No unfair advantages',
+                    'No warm audience or secret email list',
+                    'No agency team doing the work for me',
+                    'No giant budget to hide bad decisions',
                   ].map((text) => (
                     <li key={text}>
                       <IconX className="rockZeroIcon" />
@@ -45,22 +54,34 @@ export function RockSection() {
                   ))}
                 </ul>
 
-                <p className="rockText">
-                  And I&apos;m documenting EVERYTHING as I land my first paying client.
-                </p>
-                <p className="rockText">You&apos;ll see it ALL premiere during this bootcamp.</p>
-                <p className="rockPlus">Plus, I&apos;m going LIVE to walk you through:</p>
+                
+                <p className="rockText">And I’m documenting
+everything as I turn cold traffic
+into booked calls using Meta +
+GHL.</p>
+                <p className="rockPlus">You’ll see inside the training:</p>
                 <ul className="rockIconList rockIconList--right">
                   <li>
                     <IconChat className="rockIcon" />
-                    <span>The exact outreach scripts that get responses</span>
+                    <span>The exact ad setup I use to go
+from testing to profitable
+scaling</span>
                   </li>
                   <li>
                     <IconSliders className="rockIcon" />
-                    <span>Setting up the actual ad campaigns for the client</span>
+                    <span>How I turn new leads into
+conversations and clients using
+simple automations</span>
+                  </li>
+
+                  <li>
+                    <IconSliders className="rockIcon" />
+                    <span>The real numbers, wins, and
+flops so you can copy what
+works and avoid what doesn’t</span>
                   </li>
                 </ul>
-                <ul className="rockIconList">
+                {/* <ul className="rockIconList">
                   <li>
                     <IconTarget className="rockIcon" />
                     <span>How I find and contact high-value client</span>
@@ -73,7 +94,7 @@ export function RockSection() {
                     <IconGlobe className="rockIcon" />
                     <span>Delivering results using simple online tools</span>
                   </li>
-                </ul>
+                </ul> */}
 
                 <GetTicketButton />
               </div>

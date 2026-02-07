@@ -5,6 +5,8 @@ import {
   faqItems,
   learnRows,
   pricingCoreItems,
+  pricingExcludedItems,
+  pricingVipExcludedItems,
   pricingVipItems,
   proofVideos,
   testimonialRows,
@@ -48,6 +50,8 @@ export function LandingPage({ onOpenTypeform }) {
         <ProofSection videos={proofVideos} />
         <PricingSection
           coreItems={pricingCoreItems}
+          excludedItems={pricingExcludedItems}
+          vipExcludedItems={pricingVipExcludedItems}
           vipItems={pricingVipItems}
           onOpenTypeform={openTypeform}
         />

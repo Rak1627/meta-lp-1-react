@@ -4,23 +4,28 @@ export function GuaranteeSection() {
       <div className="container">
         <div className="guaranteeOuter">
           <div className="guaranteeInner">
-            <h2 className="guaranteeTitle">My &quot;Ready to Sign Clients&quot; Guarantee</h2>
+            <h2 className="guaranteeTitle">My This Won&rsquo;t Waste Your Time Promise</h2>
             <div className="guaranteeBody">
               <p>
-                If in 7 days you don&apos;t feel 100% confident that you could go out and sign your
-                first paying client, I&apos;ll refund every penny, no questions asked.
+                If you watch the training and go through the cheat sheet and still feel like you
+                have no clearer path to fixing your ads, you owe me nothing.
               </p>
               <p>
-                Just email my support team at support@brandscalingbootcamp.com, say &quot;refund
-                please,&quot; add your purchase email and you&apos;ll have your money back within 48 hours.
+                If you book the 1:1 audit and, by the end of the call, you don&apos;t feel like you
+                know exactly what to do next, I&apos;ll refund the 197, no questions asked.
               </p>
               <p>
-                I can make this guarantee because I know my audience really well. I&apos;ve seen what
-                happens when people actually follow the system.
+                Just reply to your confirmation email within 7 days and say refund please, you&apos;ll
+                have your money back within 24 hours.
               </p>
-              <p>And I know that if you do the work, the results are basically inevitable.</p>
-              <p>The only people who don&apos;t get results are the ones who don&apos;t show up.</p>
-              <p>So show up. I&apos;ll handle the rest.</p>
+              <p>
+                I can make this promise because I know the game you&apos;re playing and I&apos;ve seen what
+                happens when people finally install a real system.
+              </p>
+              <p>
+                If you show up and do the work, results stop being a mystery and start being math.
+              </p>
+              <p>You handle the showing up. I&apos;ll handle the rest.</p>
             </div>
           </div>
         </div>

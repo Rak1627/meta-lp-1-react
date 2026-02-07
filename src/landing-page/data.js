@@ -4,51 +4,51 @@ export const dayCards = [
   {
     kicker: 'DAY 1',
     title: 'The Opportunity of the Decade',
-    desc: 'Learn why Freelance Brandscaling with AI is the simplest, fastest business to start in 2026.',
+    desc: 'Learn why understanding your buyer beats copying “winning” ads.',
     bullets: [
-      'Why this is superior to ecom, trading, and every other online business being pushed',
-      'How to position yourself as a high-value service provider, even if you have no results',
-      'Why brands are desperate for people who can help them get more customers',
+      'Why most freelancers and agencies only speak to the 3% ready to buy now',
+      'How to map your buyer’s fears, goals, and objections before you write a single line of copy',
+      'How to position your offer so it feels “made for them,” even in a crowded niche',
     ],
   },
   {
     kicker: 'DAY 2',
     title: 'First High-Paying Client',
-    desc: 'Join me for the live premiere of going from zero to premium clients to learn how you can do the same.',
+    desc: 'See the full system you’ll copy from the training and cheat sheet.',
     bullets: [
-      'Word-for-word outreach scripts that are proven to get responses',
-      'The “Irresistible Offer” framework that makes them feel dumb saying no',
-      'Closing deals like a pro, even if you’re introverted or inexperienced',
+      'The exact campaign structure to turn cold traffic into booked calls',
+      'The GHL automations that follow up, nurture, and close while you’re off the laptop',
+      'How to scale spend without breaking your funnel or burning your audience',
     ],
   },
   {
     kicker: 'DAY 3',
     title: 'Advertising & Delivering Results',
-    desc: 'Understand how to run profitable ads and automate 80% of your work using AI tools.',
+    desc: 'Understand how to set up profitable Meta campaigns and know exactly what to fix when they tank.',
     bullets: [
-      'Get a complete understanding of Facebook, Google, and TikTok ads manager',
-      'How to be smart with your clients’ budgets so you get the most bang for your buck',
-      'How to analyze ad performance and know exactly what’s working/not working',
+      'The campaign setup I use so every dollar has a job',
+      'How to read your numbers in Ads Manager without getting overwhelmed',
+      'The simple tweaks that turn “nice” campaigns into ones that print buyers',
     ],
   },
   {
     kicker: 'DAY 4',
     title: 'Building The System That Works For You',
-    desc: 'Transform from solo freelancer into a profitable agency owner. Includes live Q&A with Brez & guest speaker.',
+    desc: 'Transform random leads into a steady flow of clients using GHL.',
     bullets: [
-      'When to hire, who to hire, and how much to pay them',
-      "Systems for delegating ad management so you're not doing all the work",
-      'How to go from 5 clients to 15+ clients without working more hours',
+      'The pipeline and automations that take new leads from click → conversation → client',
+      "How to stop being the bottleneck by letting the system chase, remind, and nurture for you",
+      'The exact follow‑up rhythm that works for both hungry freelancers and busy agency owners',
     ],
   },
   {
     kicker: 'DAY 5',
     title: 'Winners & Advanced Tactics',
-    desc: 'Fast-track methods to achieve 5 years of growth in just 1. Giveaway winners announced.',
+    desc: 'Fast‑track what’s working instead of restarting from scratch every month.',
     bullets: [
-      'Insider secrets on personal branding that attract clients TO you (instead of outreach)',
-      'The partnership model that lets you charge premium rates to fewer, better clients',
-      'Special surprises for attendees who took massive action during the bootcamp',
+      'How to safely scale spend without wrecking your cost per lead',
+      'When to duplicate, when to kill, and when to just let Meta cook',
+      'How this system becomes an asset you can plug into any offer you launch next',
     ],
   },
 ]
@@ -56,33 +56,33 @@ export const dayCards = [
 export const learnRows = [
   {
     number: '01',
-    titleLines: ['Day 1: The Opportunity', 'of the Decade'],
+    titleLines: ['Part 1: The Psychology That Makes Meta Ads Work'],
     image: 'day1',
     card: dayCards[0],
   },
   {
     number: '02',
     reverse: true,
-    titleLines: ['Day 2: First High-', 'Paying Client'],
+    titleLines: ['Part 2: Psychology Into a Simple Meta + GHL System'],
     image: 'day2',
     card: dayCards[1],
   },
   {
     number: '03',
-    titleLines: ['Day 3: Advertising &', 'Delivering Results'],
+    titleLines: ['Part 3: Running Ads That Actually Turn Into Money'],
     image: 'day3',
     card: dayCards[2],
   },
   {
     number: '04',
     reverse: true,
-    titleLines: ['Day 4: Building The', 'System That Works', 'For You'],
+    titleLines: ['Part 4: Building the Follow‑Up System Around Your Ads'],
     image: 'day4',
     card: dayCards[3],
   },
   {
     number: '05',
-    titleLines: ['Day 5: Winners &', 'Advanced Tactics'],
+    titleLines: ['Part 5: Scaling Without Burning Out or Burning Your Audience'],
     image: 'day5',
     card: dayCards[4],
     cta: true,
@@ -129,21 +129,30 @@ export const faqItems = [
 ]
 
 export const pricingCoreItems = [
-  'Full access to the 5-Day Brandscaling Bootcamp',
-  'Watch Brez go from zero to first client payment live',
-  'Learn the exact Freelance Brandscaling with AI system',
-  'Daily training on opportunity, client acquisition, media buying, scaling, and fast-track tactics',
-  'Access to all live sessions and Q&A',
+  'Meta Ads Psychology Cheat Sheet (PDF you can reuse for every offer)',
+  'Step‑by‑step VSL showing the full Meta + GHL setup',
+  'The exact campaign structure, audiences, and basic settings I use',
+  'The follow‑up flow that turns new leads into booked calls automatically',
+  'A simple checklist to audit your current ads, landing page, and GHL in under 60 minutes',
+]
+
+export const pricingExcludedItems = [
+  'No live webinar to sit through',
+  'No “high‑pressure” sales call you have to book first',
+  'No agency retainer, minimum ad spend, or tech headache',
+]
+
+export const pricingVipExcludedItems = [
+  'No done-for-you media buying',
+  'No long-term contract or retainer',
 ]
 
 export const pricingVipItems = [
-  'Chance To Win a Private Group Dinner With Brez In Miami',
-  'Private VIP Discord channel with exclusive content',
-  'Access to all challenge recordings for replay',
-  '30-minute breakout sessions with Brez each day',
-  '2x odds in all giveaways and raffles',
-  'Priority support and direct feedback',
-  'Lifetime access to bootcamp recordings',
+  '60-90 minute Zoom call where we screenshare your Meta, funnel, and GHL',
+  'Full audit of your offer, ads, targeting, and follow-up flows',
+  'A custom action plan to fix leaks and turn your traffic into booked calls',
+  "Loom recap with clear next steps so you're not guessing after the call",
+  'Priority access to me on email for 7 days while you implement',
 ]
 
 export const proofVideos = [
