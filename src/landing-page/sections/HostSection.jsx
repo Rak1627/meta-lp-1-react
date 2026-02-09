@@ -7,10 +7,15 @@ return (
     <div className="hostCard">
       <div className="hostCard__inner">
         <div className="hostLayout">
-          <h2 className="hostHeading">Meet Your Host</h2>
+          <h2 className="hostHeading"><span className='gradientText'> Meet Your Host</span></h2>
 
           <div className="hostMedia">
-            <Image className="hostImage" src="host" alt="Brez, your host" sizes="(max-width: 768px) 100vw, 400px" />
+            <img
+              className="hostImage"
+              src="/images/optimized/meetyourhost-picture.png"
+              alt="Brez, your host"
+              loading="lazy"
+            />
           </div>
 
           <div className="hostCopy">

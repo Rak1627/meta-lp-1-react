@@ -28,7 +28,7 @@ export function RockSection() {
                 <h2 className="rockTitle">
                   Follow Along as I Build
                   <br />
-                  a Profit<span className="rockTitle__yellow"> Machine From Scratch</span>
+                  a Profit Machine From Scratch
                 </h2>
                  
 
@@ -55,10 +55,7 @@ shortcuts.</p>
                 </ul>
 
                 
-                <p className="rockText">And I’m documenting
-everything as I turn cold traffic
-into booked calls using Meta +
-GHL.</p>
+                <p className="rockText"> <strong><span className='gradientText'>And I’m documenting everything as I turn cold traffic into booked calls using Meta + GHL.</span></strong></p>
                 <p className="rockPlus">You’ll see inside the training:</p>
                 <ul className="rockIconList rockIconList--right">
                   <li>
@@ -96,7 +93,7 @@ works and avoid what doesn’t</span>
                   </li>
                 </ul> */}
 
-                <GetTicketButton />
+                <GetTicketButton label="Get Started" />
               </div>
             </div>
           </div>

@@ -5,9 +5,11 @@ export function GiveawaySection() {
     <section className="section section--tight giveawaySection">
       <div className="container">
         <h2 className="giveawayHeading">
+          <span className='gradientText'>
           Everyone Who Grabs the Training Is
           <br />
           Automatically Entered to Win:
+          </span>
         </h2>
 
         <div className="giveawayGrid">

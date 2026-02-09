@@ -7,7 +7,7 @@ export function WhySection() {
         <div className="whyCard">
           <div className="whyGrid">
             <div className="whyCopy">
-              <h2 className="whyTitle">&quot;Why Is This Free?&quot;</h2>
+              <h2 className="whyTitle"><span className='gradientText'> &quot;Why Is This Free?&quot;</span></h2>
               <div className="whyBody">
                 <p>Fair question.</p>
                 <p>

@@ -11,17 +11,12 @@ export function BrandScalingSection() {
             </div>
 
             <h2 className="brandScalingTitle">
-             <span className="brandScalingTitle__yellow"> Only 3%</span> of your market wakes up ready to buy
+             <span className="gradientText"> Only 3%</span> of your market wakes up <span className='gradientText'> ready to buy</span>
             </h2>
              
 
             <p className="brandScalingText">
-              Only 3% of your market wakes up ready to buy
-
-if you don’t have a system for the other 97%, you’re lighting
-your advertising budget on fire
-
-
+                if you <strong><span className='gradientText'> don’t have a system</span></strong> for the other <strong><span className='gradientText'> 97%,</span></strong> you’re lighting your advertising <strong><span className='gradientText'> budget on fire</span></strong>
             </p>
             <p className="brandScalingText">
               Because here’s what actually happens:

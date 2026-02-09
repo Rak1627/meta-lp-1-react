@@ -18,7 +18,7 @@ export function LimitedSection() {
     <section className="section section--tight limitedSection">
       <div className="container">
         <div className="limitedHeading">
-          <h2 className="limitedTitle">This Won’t Be Free Forever</h2>
+          <h2 className="limitedTitle"><span className="gradientText"> This Won’t Be Free Forever</span></h2>
           <div className="limitedLead">
             <p className="limitedLeadMuted">Access to the free training may close once we hit
 our max number of users I can realistically

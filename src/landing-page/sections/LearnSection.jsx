@@ -6,7 +6,7 @@ export function LearnSection({ rows }) {
   return (
     <section className="section learnSection">
       <div className="container">
-        <h2 className="learnHeading">What You’ll Learn in the Training</h2>
+        <h2 className="learnHeading"><span className='gradientText'> What You’ll Learn in the Training</span></h2>
 
         <div className="learnDays">
           {rows.map((day) => (
@@ -19,7 +19,7 @@ export function LearnSection({ rows }) {
                 <div className="learnCopy">
                   <h3 className="learnTitle">
                     {day.titleLines.map((line) => (
-                      <span className="learnTitle__line" key={line}>
+                      <span className="learnTitle__line gradientText" key={line}>
                         {line}
                       </span>
                     ))}
@@ -44,7 +44,7 @@ export function LearnSection({ rows }) {
 
                 {day.cta ? (
                   <div className="learnCtaRow">
-                    <GetTicketButton />
+                    <GetTicketButton label="Hit the Damn Button" />
                   </div>
                 ) : null}
               </div>

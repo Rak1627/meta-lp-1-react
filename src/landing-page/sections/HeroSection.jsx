@@ -9,11 +9,19 @@ export function HeroSection({ heroPlayerId }) {
         <div className="hero__inner">
           <div className="pill pill--gradient">Stop Wasting Money on Agencies</div>
           <h1 className="hero__title">
-            Turn Meta Ads/Marketing Into a Simple System That Brings You Buyers Every Day
+            Turn <span className="text-gradient">Meta Ads/Marketing</span> Into a{' '}
+            <span className="text-gradient">Simple System</span> That Brings You{' '}
+            <span className="text-gradient">Buyers Every Day</span>
           </h1>
           <p className="hero__subtitle">
-            Get the free Meta Ads Cheat Sheet and short video that
-            show you how to plug your ads into GHL so you book more calls and make more sales without hiring anyone.
+            Get the <span className="text-gradient">free</span> Meta Ads{' '}
+            <span className="text-gradient">Cheat Sheet</span> and{' '}
+            <span className="text-gradient">short video</span> that show you how to plug{' '}
+            <span className="text-gradient">your ads</span> <span className="text-gradient">into GHL</span> so you{' '}
+            <span className="text-gradient">book</span> more{' '}
+            <span className="text-gradient">calls</span> and make{' '}
+            <span className="text-gradient">more sales</span> without{' '}
+            <span className="text-gradient">hiring anyone</span>.
           </p>
 
           <div className="videoShell">
@@ -23,9 +31,10 @@ export function HeroSection({ heroPlayerId }) {
           </div>
 
           <div className="heroBelowVideo">
-            <p className="heroBelowVideo__brand">The Brand Scaling Bootcamp</p>
+            
             <p className="heroBelowVideo__join">
-              Join the <span className="red">LIVE 5-Day</span> Virtual Event
+              For <span className="gradientText"> Operators</span> or <span className="gradientText">Founders</span> who are tired of
+              feast‑or‑famine <span className="gradientText">clients.</span>
             </p>
             <GetTicketButton />
           </div>

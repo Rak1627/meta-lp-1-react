@@ -4,14 +4,14 @@ export function AboutSection() {
   return (
     <section className="section aboutSection">
       <div className="container">
-        <h2 className="aboutHeading">About the Training & Cheat
-Sheet</h2>
+        <h2 className="aboutHeading"><span className='gradientText'> About the Training & Cheat
+Sheet</span></h2>
 
         <div className="aboutGrid">
           <div className="aboutCard">
             <div className="aboutCard__head">
               <IconQuestionCircle className="aboutCard__icon" />
-              <div className="aboutCard__label">WHAT</div>
+             <h3 style={{ margin: '0px' }} className="aboutCard__label"> <strong><span className='gradientText'> WHAT</span></strong></h3>
             </div>
             <p className="aboutCard__text">
               A free on‑demand training + Meta Ads
@@ -27,7 +27,7 @@ the cheat sheet open as you build.
           <div className="aboutCard">
             <div className="aboutCard__head">
               <IconPin className="aboutCard__icon" />
-              <div className="aboutCard__label">WHERE</div>
+              <div className="aboutCard__label"><strong><span className='gradientText'> WHERE</span></strong></div>
             </div>
             <p className="aboutCard__text">
               100% online. You’ll get instant access to the video
@@ -39,7 +39,7 @@ time you launch or fix a campaign.
           <div className="aboutCard">
             <div className="aboutCard__head">
               <IconCalendar className="aboutCard__icon" />
-              <div className="aboutCard__label">WHEN</div>
+              <div className="aboutCard__label"><strong><span className='gradientText'> WHEN</span></strong></div>
             </div>
             <p className="aboutCard__text">
               Right now.

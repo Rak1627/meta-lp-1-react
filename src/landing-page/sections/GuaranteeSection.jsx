@@ -4,7 +4,7 @@ export function GuaranteeSection() {
       <div className="container">
         <div className="guaranteeOuter">
           <div className="guaranteeInner">
-            <h2 className="guaranteeTitle">My This Won&rsquo;t Waste Your Time Promise</h2>
+            <h2 className="guaranteeTitle"> My This Won&rsquo;t Waste Your Time Promise</h2>
             <div className="guaranteeBody">
               <p>
                 If you watch the training and go through the cheat sheet and still feel like you

@@ -14,37 +14,37 @@ export function TradeSection() {
 
               <ul className="tradeList">
                 <li>
-                  <strong className="tradeHl tradeHl--red">The “lucky”</strong> month where your ads somehow work…
+                  The <strong><span className="gradientText">“lucky”</span></strong> month where your ads somehow <strong><span className="gradientText">work…</span></strong>
                    followed by two months of crickets.
                 </li>
                 
                 <li>
-                  <strong className="tradeHl tradeHl--red">The agency</strong> that sends screenshots and buzzwords but
-                    not buyers in your Stripe.
+                  The agency that sends screenshots and buzzwords but 
+                    <strong> <span className="gradientText">not buyers</span></strong> in your Stripe.
                    
                 </li>
                 <li>
-                  <strong className="tradeHl tradeHl--red">The campaigns</strong> that get clicks, likes, and comments—but
-                    almost no booked calls.
+                  The campaigns that get clicks, likes, and comments—but
+                    almost <strong> <span className="gradientText"> no booked calls.</span></strong>
                 </li>
                 
                 <li>
-                  <strong className="tradeHl tradeHl--yellow">The feeling</strong> that you’re smart enough to fix this, but you
-                    don’t know what to change.  
+                  The feeling that you’re smart enough to fix this, but you
+                    <strong> <span className="gradientText"> don’t know </span></strong> what to <strong> <span className="gradientText">change.</span></strong>  
                 </li>
                 <li>
-                  <strong className="tradeHl tradeHl--yellow">The quiet</strong> panic every time you check Ads Manager and
-see money going out, not coming back.
+                  The quiet panic every time you check Ads Manager and
+see <strong><span className='gradientText'>money</span></strong> going <strong><span className='gradientText'>out, not</span></strong> coming <strong><span className='gradientText'>back.</span></strong>
 
                    
                 </li>
               </ul>
 
               <p className="tradeBottom tradeBottom--strong">
-                You’re not crazy for wanting predictable clients and cashflow.
+                <span className='gradientText'> You’re not crazy for wanting predictable clients and cashflow.</span>
               </p>
-              <p className="tradeBottom">You’ve just never been shown a simple system that makes
-Meta ads work for you, not against you.</p>
+              <p className="tradeBottom">You’ve just never been shown a <strong><span className='gradientText'>simple system</span></strong> that makes
+Meta ads <strong><span className='gradientText'>work</span></strong> for you, not against you.</p>
             </div>
 
             <div className="tradeMedia" aria-hidden="true">

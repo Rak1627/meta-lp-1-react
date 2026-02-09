@@ -13,7 +13,7 @@ export function FaqSection({ items }) {
   return (
     <section className="section faqSection">
       <div className="container">
-        <h2 className="faqTitle">Frequently Asked Questions</h2>
+        <h2 className="faqTitle"><span className='gradientText'> Frequently Asked Questions</span></h2>
         <div className="faq">
           {items.map((item, idx) => {
             const open = openFaqIndex === idx

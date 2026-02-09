@@ -48,7 +48,7 @@ export function TestimonialsSection({ rows }) {
   return (
     <section className="section testimonialsSection">
       <div className="container">
-        <h2 className="testimonialsHeading">See What Regular People Are Getting With This System</h2>
+        <h2 className="testimonialsHeading"><span className='gradientText'> See What Regular People Are Getting With This System</span></h2>
 
         <div className="testimonialsRows">
           <TestimonialsMarquee images={rows[0]} duration="85s" />

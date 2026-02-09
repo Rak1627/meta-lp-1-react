@@ -22,7 +22,7 @@ export function PricingSection({
     <section className="section pricingSection" id="pricing">
       <div className="container">
         <div className="pricingHeader">
-          <h2 className="pricingHeading">Here’s What’s Inside</h2>
+          <h2 className="pricingHeading"><span className='gradientText'> Here’s What’s Inside</span></h2>
           <p className="pricingSub">
             <em>Plug the system straight into your business.</em>
           </p>
