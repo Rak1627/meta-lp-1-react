@@ -6,8 +6,8 @@ export function BrandScalingSection() {
       <div className="container brandScalingWrap">
         <div className="brandScalingOuter">
           <div className="brandScalingInner">
-            <div className="brandScalingQuote" aria-hidden="true">
-              &ldquo;
+            <div className="brandScalingQuote" aria-hidden="true"> <span className='gradientText'>
+              &ldquo;</span>
             </div>
 
             <h2 className="brandScalingTitle">
@@ -34,8 +34,8 @@ follow‑up, reminders, and proof before they move.
             </p>
             <p className="brandScalingText"> • The remaining 57% don’t even know they have a problem
 yet—until your content and ads make it painfully obvious.</p>
-            <p className="brandScalingHighlight">
-              Your Meta ads shouldn’t just “get traffic.”
+            <p className="brandScalingHighlight"> 
+             <span className='gradientText'> Your Meta ads shouldn’t just “get traffic.”</span>
             </p>
             <p className="brandScalingText">They should push all three groups into one simple GHL
 system that captures them, follows up with them, and turns
