@@ -79,7 +79,7 @@ export function FooterSection({ logoUrl }) {
               <a href="#" target="_blank" rel="noreferrer">
                 Privacy Policy
               </a>
-              <p className="muted-2">&copy;2026. Brez Marketing LLC. All Rights Reserved.</p>
+              <p className="muted-2">&copy;2026. Ahmed Damouni LLC. All Rights Reserved.</p>
             </div>
           </div>
         </div>
