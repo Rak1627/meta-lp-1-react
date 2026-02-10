@@ -14,9 +14,9 @@ export function GiveawaySection() {
 
         <div className="giveawayGrid">
           <div className="giveawayCard">
-            <div className="giveawayCard__image">
+            <div className="giveawayCard__image giveawayCard__image--laptop">
               <Image
-                src="overlay-border"
+                src="laptop"
                 alt="Three brand new MacBooks"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />

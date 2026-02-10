@@ -31,9 +31,9 @@ export function PricingSection({
         <div className="pricingGrid">
           <PricingCard
             variant="general"
-            price="$47"
-            name="General Ticket"
-            meta="Increases to $67 soon"
+            price="$0"
+            name=""
+            meta=""
             items={generalItems}
             buttonText="YES - IT'S ACTUALLY FREE"
             onClick={() => onOpenTypeform('general')}

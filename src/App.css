@@ -1171,7 +1171,7 @@
 .rockMedia img {
   width: 100%;
   height: auto;
-      max-height: 631px;
+  max-height: 631px;
   object-fit: cover;
 }
 
@@ -1939,6 +1939,10 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+
+.giveawayCard__image--laptop img {
+  object-position: center bottom;
 }
 
 .giveawayCard__title {
