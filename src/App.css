@@ -2025,7 +2025,7 @@
   }
 
   .giveawayCard__image {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 2.25;
   }
 
   .giveawayNote {
@@ -2782,6 +2782,12 @@
         "copy";
         column-gap: 0;
         row-gap: 26px;
+  }
+  .rockMedia {
+    aspect-ratio: auto;
+  }
+  .rockMedia img {
+    height: auto;
   }
   .learnDay {
     /* padding-left: 30px; */
