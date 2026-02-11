@@ -923,6 +923,20 @@
   filter: drop-shadow(0 24px 64px rgba(0, 0, 0, 0.55));
 }
 
+.learnMedia__img--mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .learnMedia__img--desktop {
+    display: none;
+  }
+
+  .learnMedia__img--mobile {
+    display: block;
+  }
+}
+
 .learnCtaRow {
   grid-area: cta;
   display: flex;

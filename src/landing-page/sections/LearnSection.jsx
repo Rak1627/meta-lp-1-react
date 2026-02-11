@@ -36,9 +36,16 @@ export function LearnSection({ rows }) {
 
                 <div className="learnMedia">
                   <Image
+                    className="learnMedia__img learnMedia__img--desktop"
                     src={day.image}
                     alt={`Day ${day.number} preview`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                  />
+                  <Image
+                    className="learnMedia__img learnMedia__img--mobile"
+                    src={day.imageMobile || day.image}
+                    alt={`Day ${day.number} preview`}
+                    sizes="(max-width: 767px) 100vw, 50vw"
                   />
                 </div>
 
@@ -64,6 +71,7 @@ LearnSection.propTypes = {
       image: PropTypes.string.isRequired,
       reverse: PropTypes.bool,
       cta: PropTypes.bool,
+      imageMobile: PropTypes.string,
       card: PropTypes.shape({
         desc: PropTypes.string.isRequired,
         bullets: PropTypes.arrayOf(PropTypes.string).isRequired,

@@ -58,6 +58,7 @@ export const learnRows = [
     number: '01',
     titleLines: ['Part 1: The Psychology That Makes Meta Ads Work'],
     image: 'part-1',
+    imageMobile: 'part-1-trim',
     card: dayCards[0],
   },
   {
@@ -65,12 +66,14 @@ export const learnRows = [
     reverse: true,
     titleLines: ['Part 2: Psychology Into a Simple Meta + GHL System'],
     image: 'part-2',
+    imageMobile: 'part-2-trim',
     card: dayCards[1],
   },
   {
     number: '03',
     titleLines: ['Part 3: Running Ads That Actually Turn Into Money'],
     image: 'part-3',
+    imageMobile: 'part-3-trim',
     card: dayCards[2],
   },
   {
@@ -78,12 +81,14 @@ export const learnRows = [
     reverse: true,
     titleLines: ['Part 4: Building the Follow‑Up System Around Your Ads'],
     image: 'part-4',
+    imageMobile: 'part-4-trim',
     card: dayCards[3],
   },
   {
     number: '05',
     titleLines: ['Part 5: Scaling Without Burning Out or Burning Your Audience'],
     image: 'part-5',
+    imageMobile: 'part-5-trim',
     card: dayCards[4],
     cta: true,
   },
