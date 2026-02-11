@@ -42,7 +42,7 @@ export function LearnSection({ rows }) {
                     sizes="(min-width: 768px) 50vw, 100vw"
                   />
                   <Image
-                    className="learnMedia__img learnMedia__img--mobile"
+                    className={`learnMedia__img learnMedia__img--mobile${day.number === '01' ? ' learnMedia__img--mobile-small' : ''}`}
                     src={day.imageMobile || day.image}
                     alt={`Day ${day.number} preview`}
                     sizes="(max-width: 767px) 100vw, 50vw"

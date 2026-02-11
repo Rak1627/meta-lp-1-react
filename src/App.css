@@ -935,6 +935,11 @@
   .learnMedia__img--mobile {
     display: block;
   }
+
+  .learnMedia__img--mobile-small {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .learnCtaRow {
