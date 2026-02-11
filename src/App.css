@@ -17,7 +17,7 @@
 .container {
   width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
-  width: 80%;
+  /* width: 80%; */
 }
 
 @media (max-width: 767px) {
@@ -1185,12 +1185,12 @@
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(0, 0, 0, 0.35);
+  aspect-ratio: 735 / 633;
 }
 
 .rockMedia img {
   width: 100%;
-  height: auto;
-  max-height: 631px;
+  height: 100%;
   object-fit: cover;
 }
 
