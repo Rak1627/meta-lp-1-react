@@ -46,9 +46,10 @@ know where to find me.
             <div className="whyMedia">
               <div className="whyImage">
                 <Image
-                  src="image-562"
+                  src="2ndimage"
                   alt="Why this price"
                   sizes="(max-width: 768px) 100vw, 40vw"
+                  priority
                 />
               </div>
             </div>
