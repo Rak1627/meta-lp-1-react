@@ -94,26 +94,6 @@ export const learnRows = [
   },
 ]
 
-export const testimonialRows = [
-  [
-    'testimonial-1',
-    'testimonial-2',
-    'testimonial-3',
-    'testimonial-4',
-    'testimonial-5',
-    'testimonial-6',
-  ],
-  [
-    'testimonial-7',
-    'testimonial-8',
-    'testimonial-9',
-    'testimonial-10',
-    'testimonial-11',
-    'testimonial-12',
-    'testimonial-13',
-  ],
-]
-
 export const faqItems = [
   {
     q: 'I have no experience. Can I still do this?',
@@ -162,15 +142,67 @@ export const pricingVipItems = [
 
 export const proofVideos = [
   {
-    playerId: '68bf3e72542d156b8c906b2d',
-    caption: '“Jaden: Quit his 9–5, hit $14–$18k/month at 19.”',
+    videoSrc: '/videos/MEEZY.mp4',
+    caption: 'I have worked with many teams in the past but none of them come close to Ahmed and his team',
   },
   {
-    playerId: '68bf3e5db66852460c675a3f',
-    caption: '“How Cobu Went From Working As A Butcher In Serbia To Scaling His Agency To 20+ Clients”',
+    videoSrc: '/videos/MBG.mp4',
+    caption: 'A lot of it is off my plate now - not only that you guys put all of the time in the background to build it all up',
   },
   {
-    playerId: '68f958377e181d1f6b410225',
-    caption: '“James: College student now at $15–$20k/month, with 20 clients.”',
+    videoSrc: '/videos/RANA.mp4',
+    caption: 'they really take the time to understand my brand and they are super easy to deal with',
+  },
+  {
+    videoSrc: '/videos/BRAZIL.mp4',
+    caption: 'Thanks to Ahmed i\'ve done more money this month then i could\'ve ever with my old job',
+  },
+  {
+    videoSrc: '/videos/DR IAN.mp4',
+    caption: 'I believe your giving me the structure as needed. As you said a Ferrari engine doesn\'t fit in a Toyota',
+  },
+  {
+    videoSrc: '/videos/GMP JOBS.mp4',
+    caption: 'Today we picked up a few new clients, so today i spent most of the day meeting up with them and chasing suppliers',
   },
 ]
+
+export const testimonialRows = [
+  [
+    '/images/result/result1.png',
+    '/images/result/result2.png',
+    '/images/result/result3.png',
+    '/images/result/result4.png',
+    '/images/result/result5.png',
+    '/images/result/result6.png',
+    '/images/result/result7.png',
+    '/images/result/result8.png',
+    '/images/result/result9.png',
+    '/images/result/result10.png',
+    '/images/result/result11.png',
+    '/images/result/result12.png',
+    '/images/result/result13.png',
+  ],
+  [
+    '/images/result/result14.png',
+    '/images/result/result15.png',
+    '/images/result/result16.png',
+    '/images/result/result17.png',
+    '/images/result/result18.png',
+    '/images/result/result19.png',
+    '/images/result/result20.png',
+    '/images/result/result21.png',
+    '/images/result/result22.png',
+    '/images/result/result23.png',
+    '/images/result/result24.png',
+    '/images/result/result25.png',
+  ],
+]
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ export function Topbar({ logoUrl, earlybirdTargetIso }) {
           sizes="(max-width: 768px) 200px, 300px"
         />
         <div className="topbarCountdown" aria-label="Earlybird countdown">
-          <div className="topbarCountdown__label">EARLYBIRD ACCESS:</div>
+          <div className="topbarCountdown__label">Limited Time Offer:</div>
           <Countdown targetIso={earlybirdTargetIso} />
         </div>
       </div>

@@ -9,19 +9,12 @@ export function HeroSection({ heroPlayerId }) {
         <div className="hero__inner">
           <div className="pill pill--gradient">Stop Wasting Money on Agencies</div>
           <h1 className="hero__title">
-            Turn <span className="text-gradient">Meta Ads/Marketing</span> Into a{' '}
-            <span className="text-gradient">Simple System</span> That Brings You{' '}
-            <span className="text-gradient">Buyers Every Day</span>
+           The client getting system that nobody was meant to leak
           </h1>
           <p className="hero__subtitle">
-            Get the <span className="text-gradient">free</span> Meta Ads{' '}
-            <span className="text-gradient">Cheat Sheet</span> and{' '}
-            <span className="text-gradient">short video</span> that show you how to plug{' '}
-            <span className="text-gradient">your ads</span> <span className="text-gradient">into GHL</span> so you{' '}
-            <span className="text-gradient">book</span> more{' '}
-            <span className="text-gradient">calls</span> and make{' '}
-            <span className="text-gradient">more sales</span> without{' '}
-            <span className="text-gradient">hiring anyone</span>.
+           
+            The Secret <span className="text-gradient">Black Box </span> Behind Profitable Meta Ads
+            
           </p>
 
           <div className="videoShell">

@@ -27,10 +27,20 @@ we turn attention into predictable income
 
             <div className="proofGrid">
               {videos.map((video) => (
-                <div className="proofCard" key={video.playerId}>
+                <div className="proofCard" key={video.playerId || video.videoSrc}>
                   <div className="proofMedia">
                     <div className="videoShell__inner">
-                      <ConverteAiV4Player playerId={video.playerId} />
+                      {video.videoSrc ? (
+                        <video
+                          className="proofVideo"
+                          src={video.videoSrc}
+                          controls
+                          playsInline
+                          preload="metadata"
+                        />
+                      ) : (
+                        <ConverteAiV4Player playerId={video.playerId} />
+                      )}
                     </div>
                   </div>
                   <p className="proofCaption">{video.caption}</p>
@@ -47,7 +57,8 @@ we turn attention into predictable income
 ProofSection.propTypes = {
   videos: PropTypes.arrayOf(
     PropTypes.shape({
-      playerId: PropTypes.string.isRequired,
+      playerId: PropTypes.string,
+      videoSrc: PropTypes.string,
       caption: PropTypes.string.isRequired,
     })
   ).isRequired,

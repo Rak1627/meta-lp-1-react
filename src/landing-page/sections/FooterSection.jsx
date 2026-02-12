@@ -7,7 +7,7 @@ export function FooterSection({ logoUrl }) {
       <div className="container">
         <div className="footerCard">
           <div className="footerCard__inner stack">
-            <h3>INCOME DISCLAIMER:</h3>
+            {/* <h3>INCOME DISCLAIMER:</h3>
             <p className="muted-2">Important Notice Regarding Income Claims and Results</p>
             <p className="muted-2">
               The information presented on this website, including but not limited to testimonials,
@@ -65,7 +65,7 @@ export function FooterSection({ logoUrl }) {
               By using this website and/or purchasing The Elite Round Table, you acknowledge that
               you have read, understood, and agree to be bound by this disclaimer.
             </p>
-            <p className="muted-2">Last Updated: December 23rd, 2025</p>
+            <p className="muted-2">Last Updated: December 23rd, 2025</p> */}
             <div className="stack" style={{ alignItems: 'center', marginTop: 18, gap: 8 }}>
               <Image
                 className="footerLogo"
@@ -73,12 +73,12 @@ export function FooterSection({ logoUrl }) {
                 alt="The Brand Scaling Bootcamp"
                 sizes="200px"
               />
-              <a href="#" target="_blank" rel="noreferrer">
+              {/* <a href="#" target="_blank" rel="noreferrer">
                 Terms of Services
               </a>
               <a href="#" target="_blank" rel="noreferrer">
                 Privacy Policy
-              </a>
+              </a> */}
               <p className="muted-2">&copy;2026. Ahmed Damouni LLC. All Rights Reserved.</p>
             </div>
           </div>
