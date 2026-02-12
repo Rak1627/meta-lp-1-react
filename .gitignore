@@ -16,6 +16,8 @@ dist-ssr
 # Images - only ignore originals, commit optimized ones
 public/images/*
 !public/images/optimized/
+!public/images/result/
+!public/images/result/*.png
 
 # Editor directories and files
 .vscode/*
@@ -28,3 +30,4 @@ public/images/*
 *.sln
 *.sw?
 public/Design Updates and Image Adjustments *.mp4
+
